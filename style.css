@@ -27,6 +27,10 @@ nav {
     border-radius: 50%;
 }
 
+.img-boder{
+    border: 1px solid #ccc;
+}
+
 h1{
     font-size: 30px;
     font-weight: 700;
