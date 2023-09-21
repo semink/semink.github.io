@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+}
+nav {
+    background-color: white;
+}
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+}
+:is(h1, h2, h3, h4, h5, h6, p, a) {
+    color: #3D3D3D;
+}
+.navbar {
+    background: white;
+}
+.center {
+    text-align: center;
+}
+.social {
+    font-size: 9pt;
+}
+.color-dark{
+    color: #8E8D8A;
+}
+.img-round{
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
