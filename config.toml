@@ -1,0 +1,20 @@
+baseURL = "https://semink.github.io"
+languageCode = "en-us"
+title = "SEMIN KWAK"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+    author = "SEMIN KWAK"
+    description = "Postdoctoral researcher at the University of Southern California"
+    
+[[menu.main]]
+    name = "Research projects"
+    url = "/researches/"
+    weight = 1
+
+[[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 2

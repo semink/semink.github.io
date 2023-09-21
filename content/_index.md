@@ -1,0 +1,5 @@
+# <img src="images/semin_kwak.jpg" alt="Semin Kwak" class="d-block mx-auto mb-4 img-round" style="width: 100px; height: 100px;">
+
+## Short BIO
+
+I'm currently a postdoctoral researcher at the University of Southern California, collaborating with Prof. Antonio Ortega in electrical engineering and fully supported by the Swiss National Science Foundation (SNSF) through the Postdoc.Mobility fund. I got my Bachelor's from Yonsei University, guided by Prof. Dong-Hyun Kim, and my Master's at Korea Advanced Institude of Science and Technology (KAIST) with Prof. Joohwan Chun. I earned my Ph.D. at École Polytechnique Fédérale de Lausanne (EPFL), Switzerland, studying under Prof. Nikolas Geroliminis from 2017 to 2022. While I am open to exploring any area of knowledge, my current primary research interests lie in graph signal processing, traffic flow prediction, radar signal processing, and deep neural networks.
