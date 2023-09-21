@@ -23,7 +23,7 @@ Journal papers Kwak, Semin, Danya Li, and Nikolas Geroliminis. &amp;ldquo;TwoRes
       
       <guid>https://semink.github.io/researches/</guid>
       <description>Research topics This page provides a brief overview of my research topics, listed in order of the most recent research.
-Multivariate time-series forecasting The primary focus of my research during my doctoral studies was predicting future sensor values in highway sensor networks. Initially, I proposed a linear model capable of capturing the periodicity of traffic, establishing an analytic predictor. This model demonstrated superior predictive performance compared to existing models (related paper).</description>
+Graph signal processing (GSP) As a postdoctoral researcher, I&amp;rsquo;ve been dedicated to advancing the field of Graph Signal Processing (GSP). This captivating domain bridges the gap between graph theory and signal processing. At its core, GSP aims to process signals defined on graphs, considering the irregular relationships inherent to such structures.</description>
     </item>
     
   </channel>
