@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://semink.github.io/publications/</guid>
-      <description>Journal papers Kwak, Semin, Danya Li, and Nikolas Geroliminis. &amp;ldquo;TwoResNet: Two-level resolution neural network for traffic forecasting on freeway networks.&amp;rdquo; Scientific reports (2023, submitted). Kwak, Semin, Nikolas Geroliminis, and Pascal Frossard. &amp;ldquo;Predicting traffic signals on transportation networks using spatio-temporal correlations on graphs.&amp;rdquo; arXiv preprint arXiv:2104.13414 (2021). Kwak, Semin, and Nikolas Geroliminis. &amp;ldquo;Travel time prediction for congested freeways with a dynamic linear model.&amp;rdquo; IEEE Transactions on Intelligent Transportation Systems (2020). Kwak, Semin, Joohwan Chun, and Sung Hyuck Ye.</description>
+      <description>Publications This page displays my publication record. For the most recent information, please refer to my Google Scholar.
+Journal papers Kwak, Semin, Danya Li, and Nikolas Geroliminis. &amp;ldquo;TwoResNet: Two-level resolution neural network for traffic forecasting on freeway networks.&amp;rdquo; Scientific reports (2023, submitted). Kwak, Semin, Nikolas Geroliminis, and Pascal Frossard. &amp;ldquo;Predicting traffic signals on transportation networks using spatio-temporal correlations on graphs.&amp;rdquo; arXiv preprint arXiv:2104.13414 (2021). Kwak, Semin, and Nikolas Geroliminis. &amp;ldquo;Travel time prediction for congested freeways with a dynamic linear model.</description>
     </item>
     
     <item>
@@ -21,7 +22,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://semink.github.io/researches/</guid>
-      <description>Multivariate time-series forecasting The primary focus of my research during my doctoral studies was predicting future sensor values in highway sensor networks. Initially, I proposed a linear model capable of capturing the periodicity of traffic, establishing an analytic predictor. This model demonstrated superior predictive performance compared to existing models (related paper). Expanding on this research, under the assumption that traffic changes over time can be approximated by a diffusion model, I updated the predictor using Bayesian inference techniques, achieving even more impressive predictive results (related paper).</description>
+      <description>Research topics This page provides a brief overview of my research topics, listed in order of the most recent research.
+Multivariate time-series forecasting The primary focus of my research during my doctoral studies was predicting future sensor values in highway sensor networks. Initially, I proposed a linear model capable of capturing the periodicity of traffic, establishing an analytic predictor. This model demonstrated superior predictive performance compared to existing models (related paper).</description>
     </item>
     
   </channel>
