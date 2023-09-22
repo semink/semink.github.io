@@ -1,6 +1,6 @@
 # Research topics
 
-This page provides a brief overview of my research topics, listed in order of the most recent research.
+This page offers a concise overview of my research endeavors, presented starting with the most recent work. I am open to discussions on these topics and beyond. Feel free to reach out to me at: [semin.kwak@usc.edu](mailto:semin.kwak@usc.edu).
 
 ## Graph signal processing (GSP)
 
