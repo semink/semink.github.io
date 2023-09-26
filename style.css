@@ -45,3 +45,7 @@ h2 {
     margin-bottom: 20px;
     margin-top: 50px;
 }
+
+ol li {
+    margin-bottom: 10px; /* or any other value you prefer */
+}
