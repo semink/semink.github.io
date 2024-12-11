@@ -4,7 +4,7 @@ This page displays my publication record. For the most recent information, pleas
 
 ## Journal papers
 
-1. **Kwak, Semin**, Danya Li, and Nikolas Geroliminis. "TwoResNet: Two-level resolution neural network for traffic forecasting on freeway networks." Scientific reports (2023, submitted).
+1. **Kwak, Semin**, Danya Li, and Nikolas Geroliminis. "TwoResNet: Two-level resolution neural network for traffic forecasting on freeway networks." Scientific reports (2024, accepted).
 2. **Kwak, Semin**, Nikolas Geroliminis, and Pascal Frossard. "Traffic signal prediction on transportation networks using spatio-temporal correlations on graphs." IEEE Transactions on Signal and Information Processing over Networks 7 (2021): 648-659.
 3. **Kwak, Semin**, and Nikolas Geroliminis. "Travel time prediction for congested freeways with a dynamic linear model." IEEE Transactions on Intelligent Transportation Systems (2020).
 4. **Kwak, Semin**, Joohwan Chun, and Sung Hyuck Ye. "Monopulse beam synthesis using a sparse single layer of weights." IEEE Transactions on Antennas and Propagation 67, no. 4 (2019): 2787-2791.
