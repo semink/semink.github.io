@@ -1,0 +1,18 @@
+<header class="site-nav">
+    <div class="site-nav__inner">
+        <a class="site-nav__brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+            <span></span>
+            <span></span>
+        </button>
+        {{ with .Site.Menus.main }}
+        <nav class="site-nav__menu" data-nav-menu>
+            <ul>
+                {{ range . }}
+                <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+        {{ end }}
+    </div>
+</header>

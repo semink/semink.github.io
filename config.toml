@@ -1,5 +1,5 @@
 baseURL = "https://semink.github.io"
-languageCode = "en-us"
+locale = "en-us"
 title = "SEMIN KWAK"
 
 [markup.goldmark.renderer]
@@ -10,7 +10,7 @@ title = "SEMIN KWAK"
     description = "Postdoctoral researcher at the University of Southern California"
     
 [[menu.main]]
-    name = "Research projects"
+    name = "Research"
     url = "/researches/"
     weight = 1
 

@@ -1,0 +1,110 @@
+name = "Semin Kwak"
+title = "Research Scientist at Sony AI"
+location = "Zurich, Switzerland"
+email = "semin.kwak@sony.com"
+scholar = "https://scholar.google.com/citations?user=i6k3J_wAAAAJ&hl=en"
+cv = "/semin-cv.pdf"
+
+[[education]]
+degree = "Ph.D. in Electrical Engineering"
+institution = "École Polytechnique Fédérale de Lausanne (EPFL)"
+logo = "/images/logos/epfl.png"
+location = "Switzerland"
+period = "2017 – 2022"
+thesis = "Multivariate Time Series Forecasting for Freeway Networks"
+
+[[education]]
+degree = "M.S. in Electrical Engineering"
+institution = "Korea Advanced Institute of Science and Technology (KAIST)"
+logo = "/images/logos/kaist.png"
+location = "South Korea"
+period = "2013 – 2015"
+
+[[education]]
+degree = "B.S. in Electrical Engineering"
+institution = "Yonsei University"
+logo = "/images/logos/yonsei.png"
+location = "South Korea"
+period = "2007 – 2013"
+
+[[experience]]
+title = "Research Scientist"
+company = "Sony AI"
+logo = "/images/logos/sony-ai.png"
+location = "Zurich, Switzerland"
+period = "11/2024 – Present"
+
+[[experience]]
+title = "Postdoctoral Researcher"
+company = "University of Southern California"
+logo = "/images/logos/usc.png"
+location = "Los Angeles, USA"
+period = "05/2023 – 11/2024"
+
+[[experience]]
+title = "Postdoctoral Researcher"
+company = "EPFL"
+logo = "/images/logos/epfl.png"
+location = "Lausanne, Switzerland"
+period = "11/2022 – 04/2023"
+
+[[experience]]
+title = "PhD Research"
+company = "EPFL"
+logo = "/images/logos/epfl.png"
+location = "Lausanne, Switzerland"
+period = "04/2017 – 10/2022"
+
+[[experience]]
+title = "Research Associate"
+company = "KIST"
+logo = "/images/logos/kist.png"
+location = "Seoul, South Korea"
+period = "05/2016 – 03/2017"
+
+[[experience]]
+title = "Research Assistant"
+company = "KAIST"
+logo = "/images/logos/kaist.png"
+location = "Daejeon, South Korea"
+period = "03/2013 – 02/2015"
+
+[[interests]]
+title = "Graph Signal Processing"
+description = "Signal processing on non-Euclidean domains with applications to network analysis"
+
+[[interests]]
+title = "Traffic Flow Prediction"
+description = "Time series forecasting for transportation systems using deep learning"
+
+[[interests]]
+title = "Neural Networks on Graphs"
+description = "Graph convolutional networks and spectral methods for structured data"
+
+[[interests]]
+title = "AI-driven Semiconductor Design"
+description = "Machine learning for chip design optimization and performance prediction"
+
+[[interests]]
+title = "Deep Learning"
+description = "Advanced architectures including CNNs, RNNs, attention mechanisms"
+
+[[interests]]
+title = "Machine Learning & Optimization"
+description = "Classical and modern optimization algorithms for complex problems"
+
+[[skills]]
+label = "Programming"
+items = "Python, MATLAB, C/C++, JavaScript, SQL"
+
+[[skills]]
+label = "ML/DL"
+items = "PyTorch, TensorFlow, scikit-learn, NumPy, Pandas"
+
+[[skills]]
+label = "Methods"
+items = "Graph Neural Networks, CNNs, RNNs, LSTMs, Transformers"
+
+[[skills]]
+label = "Tools"
+items = "Git, Docker, Ray Tune, Plotly, D3.js"

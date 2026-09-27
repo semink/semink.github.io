@@ -1,0 +1,37 @@
+<section class="section section--parchment">
+    <div class="container">
+        <header class="section__head">
+            <h2 class="section__title">Background</h2>
+            <p class="section__subtitle">Education and professional experience</p>
+        </header>
+
+        <h3 class="group-label group-label--first">Education</h3>
+        <ul class="timeline">
+            {{ range hugo.Data.profile.education }}
+            <li class="timeline__item">
+                <span class="timeline__logo"><img src="{{ .logo }}" alt="{{ .institution }}" loading="lazy"></span>
+                <div class="timeline__body">
+                    <p class="timeline__period">{{ .period }}</p>
+                    <p class="timeline__title">{{ .degree }}</p>
+                    <p class="timeline__meta">{{ .institution }} &middot; {{ .location }}</p>
+                    {{ with .thesis }}<p class="timeline__thesis">{{ . }}</p>{{ end }}
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+
+        <h3 class="group-label">Experience</h3>
+        <ul class="timeline">
+            {{ range hugo.Data.profile.experience }}
+            <li class="timeline__item">
+                <span class="timeline__logo"><img src="{{ .logo }}" alt="{{ .company }}" loading="lazy"></span>
+                <div class="timeline__body">
+                    <p class="timeline__period">{{ .period }}</p>
+                    <p class="timeline__title">{{ .title }} &middot; {{ .company }}</p>
+                    <p class="timeline__meta">{{ .location }}</p>
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>

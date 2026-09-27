@@ -1,0 +1,12 @@
+<section class="hero">
+    <div class="hero__inner">
+        <img class="hero__avatar" src="/images/semin_kwak.jpg" alt="{{ hugo.Data.profile.name }}">
+        <h1 class="hero__title">{{ hugo.Data.profile.name }}</h1>
+        <p class="hero__tagline">{{ hugo.Data.profile.title }} &middot; {{ hugo.Data.profile.location }}</p>
+        <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:{{ hugo.Data.profile.email }}">Email</a>
+            <a class="btn btn--secondary-dark" href="{{ hugo.Data.profile.cv }}" download>CV</a>
+            <a class="btn btn--secondary-dark" href="{{ hugo.Data.profile.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        </div>
+    </div>
+</section>

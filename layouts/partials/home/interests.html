@@ -1,0 +1,27 @@
+<section class="section">
+    <div class="container">
+        <header class="section__head">
+            <h2 class="section__title">Research Interests</h2>
+            <p class="section__subtitle">Areas of focus and expertise</p>
+        </header>
+
+        <div class="interests">
+            {{ range hugo.Data.profile.interests }}
+            <article class="interest">
+                <h3 class="interest__title">{{ .title }}</h3>
+                <p class="interest__desc">{{ .description }}</p>
+            </article>
+            {{ end }}
+        </div>
+
+        <h3 class="group-label">Technical Skills</h3>
+        <div class="skills">
+            {{ range hugo.Data.profile.skills }}
+            <div class="skill">
+                <p class="skill__label">{{ .label }}</p>
+                <p class="skill__items">{{ .items }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

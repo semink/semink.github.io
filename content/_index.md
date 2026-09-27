@@ -1,5 +1,7 @@
-# <img src="images/semin_kwak.jpg" alt="Semin Kwak" class="d-block mx-auto mb-4 img-round" style="width: 100px; height: 100px;">
+---
+title: "SEMIN KWAK"
+---
 
-## Short BIO
+## About
 
 I am currently a Research Scientist at Sony AI, focusing on developing cutting-edge machine learning models for optimizing chip design. Previously, I was a postdoctoral researcher at the University of Southern California, collaborating with Prof. Antonio Ortega in electrical engineering and supported by the Swiss National Science Foundation (SNSF) through the Postdoc.Mobility fund. I completed my Bachelor’s at Yonsei University under the guidance of Prof. Dong-Hyun Kim and my Master’s at the Korea Advanced Institute of Science and Technology (KAIST) with Prof. Joohwan Chun. I earned my Ph.D. at École Polytechnique Fédérale de Lausanne (EPFL), Switzerland, studying under Prof. Nikolas Geroliminis from 2017 to 2022. My research interests span graph signal processing, traffic flow prediction, radar signal processing, deep neural networks, and AI-driven semiconductor design.
