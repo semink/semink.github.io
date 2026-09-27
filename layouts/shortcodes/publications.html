@@ -1,0 +1,75 @@
+{{- /*
+  Renders the publication list from the public ORCID record in data/profile.toml.
+  ORCID is the single source of truth (docs/adr/0003-orcid-publication-record.md):
+  works are grouped into sections by ORCID type; any other type is not shown.
+*/ -}}
+{{- $api := printf "https://pub.orcid.org/v3.0/%s" hugo.Data.profile.orcid -}}
+{{- $opts := dict "headers" (dict "Accept" "application/json") -}}
+
+{{- $summary := dict -}}
+{{- with try (resources.GetRemote (printf "%s/works" $api) $opts) -}}
+  {{- with .Err -}}{{- errorf "publications: fetching ORCID works failed: %s" . -}}{{- end -}}
+  {{- $summary = .Value | transform.Unmarshal -}}
+{{- end -}}
+
+{{- /* One put-code per group: ORCID lists the preferred version of a work first. */ -}}
+{{- $putCodes := slice -}}
+{{- range $summary.group -}}
+  {{- $putCodes = $putCodes | append (string (index (index . "work-summary") 0 "put-code")) -}}
+{{- end -}}
+
+{{- $works := slice -}}
+{{- with $putCodes -}}
+  {{- with try (resources.GetRemote (printf "%s/works/%s" $api (delimit $putCodes ",")) $opts) -}}
+    {{- with .Err -}}{{- errorf "publications: fetching ORCID work details failed: %s" . -}}{{- end -}}
+    {{- range (.Value | transform.Unmarshal).bulk -}}
+      {{- with .work -}}{{- $works = $works | append . -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $sections := slice
+  (dict "title" "Journal papers" "types" (slice "journal-article"))
+  (dict "title" "Conferences" "types" (slice "conference-paper" "conference-abstract" "conference-poster"))
+  (dict "title" "Patents" "types" (slice "patent"))
+-}}
+
+{{- range $section := $sections -}}
+  {{- $types := $section.types -}}
+  {{- $entries := slice -}}
+  {{- range $works -}}
+    {{- if in $types .type -}}
+      {{- $year := 0 -}}
+      {{- with index . "publication-date" -}}{{- with .year -}}{{- $year = int .value -}}{{- end -}}{{- end -}}
+      {{- $venue := "" -}}
+      {{- with index . "journal-title" -}}{{- $venue = .value -}}{{- end -}}
+      {{- $doi := "" -}}
+      {{- with index . "external-ids" -}}
+        {{- range index . "external-id" -}}
+          {{- if eq (lower (index . "external-id-type")) "doi" -}}{{- $doi = index . "external-id-value" -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $authors := slice -}}
+      {{- with .contributors -}}
+        {{- range .contributor -}}
+          {{- with index . "credit-name" -}}{{- $authors = $authors | append (partial "publications/author-name.html" .value) -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $entries = $entries | append (dict "title" .title.title.value "year" $year "venue" $venue "doi" $doi "authors" $authors) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- with $entries }}
+<h2>{{ $section.title }}</h2>
+<ol class="publications">
+    {{- range sort . "year" "desc" }}
+    <li>
+        {{- delimit .authors ", " | safeHTML }}. &ldquo;{{ .title }}.&rdquo;
+        {{- with .venue }} <em>{{ . }}</em>{{ end }}
+        {{- with .year }} ({{ . }}){{ end }}.
+        {{- with .doi }} <a href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end -}}
+    </li>
+    {{- end }}
+</ol>
+  {{- end }}
+{{- end -}}

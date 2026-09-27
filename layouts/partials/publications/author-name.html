@@ -1,0 +1,32 @@
+{{- /*
+  Normalizes an ORCID credit name ("Kwak, S.", "Semin Kwak", "Ye, S.H.") to
+  "S. Kwak" form and bolds the site owner. Returns escaped HTML.
+*/ -}}
+{{- $name := trim . " " -}}
+{{- $family := "" -}}
+{{- $given := slice -}}
+{{- if strings.Contains $name "," -}}
+  {{- $parts := split $name "," -}}
+  {{- $family = trim (index $parts 0) " " -}}
+  {{- $given = split (trim (index $parts 1) " ") " " -}}
+{{- else -}}
+  {{- $words := split $name " " -}}
+  {{- $family = index $words (sub (len $words) 1) -}}
+  {{- $given = first (sub (len $words) 1) $words -}}
+{{- end -}}
+{{- $initials := slice -}}
+{{- range $given -}}
+  {{- with . -}}
+    {{- if strings.Contains . "." -}}
+      {{- $initials = $initials | append . -}}
+    {{- else -}}
+      {{- $initials = $initials | append (printf "%s." (substr . 0 1)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $short := htmlEscape (delimit ($initials | append $family) " ") -}}
+{{- $owner := split hugo.Data.profile.name " " -}}
+{{- if and (eq $family (index $owner (sub (len $owner) 1))) (strings.HasPrefix (delimit $initials "") (substr (index $owner 0) 0 1)) -}}
+  {{- $short = printf "<strong>%s</strong>" $short -}}
+{{- end -}}
+{{- return $short -}}

@@ -2,6 +2,10 @@ baseURL = "https://semink.github.io"
 locale = "en-us"
 title = "SEMIN KWAK"
 
+# The publication list is fetched from ORCID at build time; refetch hourly during local development.
+[caches.getresource]
+  maxAge = "1h"
+
 [markup.goldmark.renderer]
   unsafe = true
 

@@ -23,3 +23,21 @@ _Avoid_: card shadow, elevation, glow
 **Tile rhythm**:
 The predictable light → dark → light pulse across surfaces, produced by alternating tile modes.
 _Avoid_: alternating sections
+
+# Publications
+
+How the publication list is sourced and organized.
+
+## Language
+
+**ORCID record**:
+The site owner's public ORCID profile (0000-0002-8713-4428). It is the only place publications are added, corrected, or hidden; the site never edits it.
+_Avoid_: Google Scholar profile, publication database
+
+**Publication list**:
+The Publications page, a read-only mirror of the public works in the ORCID record. Hiding a work in ORCID removes it from the list.
+_Avoid_: bibliography, CV list
+
+**Publication section**:
+A grouping of the publication list by ORCID work type: Journal papers, Conferences, Patents. A work whose type belongs to no section (preprint, dataset, "other") is public in ORCID but not listed.
+_Avoid_: category, venue type
